@@ -167,7 +167,7 @@ transform: rotate(90deg);
 .slider{
     width: 100%;
     height: 100vh;
-    background: url('https://c1.wallpaperflare.com/preview/171/852/28/keyboard-coffee-desk-monitor.jpg');
+    background: url('https://wallpapercave.com/wp/wp4584986.png');
     background-size: 100% 100% !important;
     background-position: center;
     background-repeat: no-repeat;
@@ -249,7 +249,7 @@ transform: rotate(90deg);
     .slide h1{
         font-size: 20px;
     }
-    .slider{
-        background: url('https://images.unsplash.com/photo-1588750099599-09efbe4377ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');
-    }
+    /* .slider{
+        /* background: url('https://images.unsplash.com/photo-1588750099599-09efbe4377ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80'); 
+    } */
 }
