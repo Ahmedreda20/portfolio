@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/sign-up.css">
+    <!-- <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css"> -->
+    <title>LANG SCHOOLS | LOG IN</title>
+</head>
+<body>
+    <div class="log-in-container">
+        <div class="log-in-box">
+
+            <div class="log-in-title">
+                            <h1>SIGN UP</h1>
+            <p>Register to follow what is new in that school and we will be at your service at any time</p>
+            </div>
+            
+            <div class="group">
+                <form action="" method="post">
+                <div class="group-form">
+                    <input type="text" name="firstName" id="firstName" placeholder="First name" autocomplete="off" required>
+                </div>
+                <div class="group-form">
+                    <input type="text" name="lastName" id="lastName" placeholder="Last name" autocomplete="off" required>
+                </div>
+                <div class="group-form">
+                    <input type="text" name="email" id="email" placeholder="example@example.com" autocomplete="off" required>
+                </div>
+                <div class="group-form">
+                    <input type="text" name="country" id="country" placeholder="country " autocomplete="off" required>
+                </div>
+                <div class="group-form">
+                    <input type="text" name="city" id="city" placeholder="city" autocomplete="off" required>
+                </div>
+                <div class="group-form">
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="+1 xxx xxxx xxx" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" autocomplete="off" required>
+                </div>
+                <div class="group-form">
+                    <input type="number" name="age" id="age" placeholder="age" min="0" autocomplete="off" required>
+                </div>
+                <div class="group-form">
+                    <input type="text" name="postal" id="postal" placeholder="postal" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" autocomplete="off" required>
+                </div>
+                <div class="group-form">
+                    <input type="password" name="password" id="password" placeholder="Enter password" autocomplete="off" required>
+                </div>
+                <div class="group-form">
+                    <label for="male">
+                        <input type="checkbox" name="male" id="male">
+                        Male
+                    </label>
+                    <label for="female">
+                        <input type="checkbox" name="male" id="male">
+                        female
+                    </label>
+                </div>
+                <div class="group-form button">
+                    <input type="submit" name="submit" id="submit" value="SIGN UP">
+                </div>
+            </form>
+                <div class="group-form signup-page">
+                    <a href="#">I already have an account!</a>
+                </div>
+                <div class="group-form signup-page">
+                    <p>Sign up with</p>
+                </div>
+                <div class="group-accounts">
+                    <div class="group-form-account">
+                        <button class="btn-log-in-with-accounts google">
+                            <i class="fab fa-google" style="font-size: 25px; position: absolute; left: 0; margin: 15px 20px; top: 0;"></i>
+                            Google
+                        </button>
+                    </div>
+                    <div class="group-form-account">
+                        <button class="btn-log-in-with-accounts facebook">
+                            <i class="fab fa-facebook" style=" color: white; font-size: 25px; position: absolute; left: 0; margin: 15px 20px; top: 0;"></i>
+                            Facebook
+                        </button>
+                    </div>
+                    <div class="group-form-account">
+                        <button class="btn-log-in-with-accounts apple">
+                            <i class="fab fa-apple" style="font-size: 25px; position: absolute; left: 0; margin: 15px 20px; top:0;"></i>
+                            Apple
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+                    <p>
+                <a href="#">
+                    LNAG SCHOOLS 
+                </a>
+                copyright &copy;  copyright all rights reserved
+            </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    // the selector will match all input controls of type :checkbox
+// and attach a click event handler 
+$("input:checkbox").on('click', function() {
+  // in the handler, 'this' refers to the box clicked on
+  var $box = $(this);
+  if ($box.is(":checked")) {
+    // the name of the box is retrieved using the .attr() method
+    // as it is assumed and expected to be immutable
+    var group = "input:checkbox[name='" + $box.attr("name") + "']";
+    // the checked state of the group/box on the other hand will change
+    // and the current value is retrieved using .prop() method
+    $(group).prop("checked", false);
+    $box.prop("checked", true);
+  } else {
+    $box.prop("checked", false);
+  }
+});
+</script>
+</body>
+</html>

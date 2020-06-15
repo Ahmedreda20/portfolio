@@ -1,0 +1,860 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'AbeeZee' , 'Tajawal';
+    background: #131537;
+    color: white;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: #121222;
+    border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #0b0b1a;
+}
+header{
+    width: 100%;
+    height: 50px;
+}
+ .btn-bars{
+    padding: 5px 15px;
+    font-size: 25px;
+    font-family: 'AbeeZee' , 'Tajawal';
+    background: none;
+    border: 1.5px solid #17D4FE;
+    border-radius: 4px;
+    color: #17D4FE;
+    margin: 20px;
+    cursor: pointer;
+    transition: .8s ease;
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -o-transition: .8s ease;
+    -ms-transition: .8s ease;
+    position: relative;
+}
+.btn-bars:hover{
+    color: #131537;
+    background: #17D4FE;
+
+}
+.btn-bars:hover #number{
+    color: #131537 !important;
+    background: #17D4FE !important;
+}
+
+.btn-bars #number{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -5px;
+    margin-right: -5px;
+    font-size: 15px;
+    font-weight: 900;
+    background: rgb(43, 207, 98);
+    color: white;
+    border-radius: 100px;
+    padding: 7px;
+    color: white;
+    transition: .8s ease;
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -o-transition: .8s ease;
+    -ms-transition: .8s ease;
+    box-shadow: 0 0 1px 3px #131537;
+}
+.container-login{
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+.container-login label[for="text"]{
+    text-align: justify;
+    display: block;
+    padding: 0 30px;
+    margin-left: 18px;
+    text-align: right;
+}
+.container-login span{
+    color: red;
+    vertical-align: text-bottom;
+}
+.container-login input{
+    padding: 10px;
+    display: block;
+    width: 80%;
+    margin:  0 auto;
+    margin-bottom: 20px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+    font-family: 'AbeeZee' , 'Tajawal';
+    color: white;
+    text-align: right;
+}
+.container-login button{
+    padding: 5px 20px;
+    font-size: 15px;
+    font-family: 'AbeeZee' , 'Tajawal';
+    font-weight: lighter;
+    display: block;
+    margin: 5% auto;
+    border: 1px solid black;
+    color: white;
+    background: none;
+    cursor: pointer;
+    transition: .8s ease;
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -o-transition: .8s ease;
+    -ms-transition: .8s ease;
+}
+.container-login button:hover{
+    color: white;
+    background: black;
+}
+.type{
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 3%;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.type a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.089);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup{
+    width: 300px;
+    height: 150px;
+    display: block;
+    margin: 15% auto;
+    background: #0b0b1a;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.popup h1{
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+    margin: 13% auto;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.clock {
+    position: relative;
+    display: block;
+    text-align: center;
+    color: #17D4FE;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: 3%;
+}
+.box{
+    display: block;
+    margin: 5% auto;
+    width: 500px;
+    height: 50vh;
+    text-align: center;
+    position: relative;
+}
+.box .btn-add{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #17D4FE;
+    color: #17D4FE;
+    background: none;
+    border-radius: 100px;
+    transition: .8s ease;
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -o-transition: .8s ease;
+    -ms-transition: .8s ease;
+    font-family: 'AbeeZee' , 'Tajawal';
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 50px -40px;
+}
+.box .btn-add:hover{
+    color: #131537;
+    background: #17D4FE;
+}
+.btn-restart{
+    padding: 10px;
+    background: none;
+    border-radius: 100px;
+    transition: .8s ease;
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -o-transition: .8s ease;
+    -ms-transition: .8s ease;
+    font-family: 'AbeeZee' , 'Tajawal';
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    right: 50%;
+    border: none;
+    display: none;
+    float: right;
+    position: absolute;
+    margin-right: -20%;
+    margin-top: -35%;
+}
+@keyframes anie{
+    from{
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+@-webkit-keyframes anie{
+    from{
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+@-moz-keyframes anie{
+    from{
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+@-ms-keyframes anie{
+    from{
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+@-o-keyframes anie{
+    from{
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+}
+.btn-restart svg{
+    width: 20px;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    animation: anie 1s;
+    -webkit-animation: anie 1s;
+    -moz-animation: anie 1s;
+    -ms-animation: anie 1s;
+    -o-animation: anie 1s;
+}
+.btn-restart svg:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+.btn-restart #fill{
+    fill: white;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+}
+.btn-restart svg:hover #fill{
+    fill: rgb(43, 207, 98);
+}
+.box h1{
+    font-weight: lighter;
+    font-size: 25px;
+    margin-top: 50px;
+    display: inline-block;
+}
+.preview{
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+p{
+    font-size: 30px;
+}
+.value{
+    font-size: 15px;
+    line-height: 50px;
+    margin-top: 1%;
+    animation: aime 1s;
+}
+@keyframes aime {
+    from{
+        opacity: 0;
+        margin-top: 0;
+    }
+    to{
+        opacity: 1;
+        margin-top: 1%;
+    }
+}
+.ContainerBox{
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left:-350px;
+    background: #131537;
+    box-shadow: 0 0  20px #11122e;
+    transition: .8s ease;
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -o-transition: .8s ease;
+    -ms-transition: .8s ease;
+    z-index: 0;
+    overflow: auto;
+    overflow-x: hidden;
+}
+#close-bar{
+    
+    border: none;
+    text-align: right;
+}
+.btn-close{
+    border: none;
+    font-size: 30px;
+    margin: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+    background: none;
+    transition: .8s ease;
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -o-transition: .8s ease;
+    -ms-transition: .8s ease;
+    border-radius: 4px;
+    color: #17D4FE;
+}
+.btn-close:hover{
+    color: #131537;
+}
+
+.ContainerBox .header li{
+    padding: 10px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: right;
+    font-weight: 400;
+    list-style: none;
+}
+.ContainerBox .header li p{
+    padding: 10px;
+    font-size: 15px;
+    line-height: 25px;
+    padding-right:20px;
+    font-weight: 400;
+}
+.ContainerBox .note{
+    padding: 10px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: right;
+    font-weight: 400;
+    list-style: none;
+}
+.note p{
+    padding: 10px;
+    font-size: 15px;
+    line-height: 25px;
+    padding-right:20px;
+    font-weight: 500;
+    color: lightcoral;
+}
+.header input{
+    font-family: 'AbeeZee' , 'Tajawal';
+    text-align: center;
+    padding: 6px 10px;
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background: #17D4FE;
+    border: none;
+    border-radius: 4px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+.header #submit:hover{
+    background: rgb(0, 186, 228);
+    color: #131537;
+    cursor: pointer;
+}
+
+footer{
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+footer p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+    position: relative;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+footer p::after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    border-radius: 100px;
+    background: #17D4FE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 48px;
+}
+footer ul li{
+    display: inline-block;
+    padding: 10px 15px;
+    list-style: none;
+}
+footer ul li a{
+    color: white;
+    font-size: 20px;
+}
+
+.QuranContainer{
+    width: 600px;
+    height: 85vh;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    color: black;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.QuranHeader{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 1%;
+
+}
+.QuranHeader img{
+    width: auto;
+}
+.quran{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+.quran h1{
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 35px;
+}
+.quran img{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+.QuranContainer button{
+    position: absolute;
+    top: 50%;
+    padding:5px 10px;
+    border: none;
+    background: #13153762;
+    color: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: -5%; 
+       transition: .8s ease;
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -o-transition: .8s ease;
+    -ms-transition: .8s ease;
+    border-radius: 0 5px 5px 0;
+    display: none;
+}
+.next
+{
+    right: 0;
+    border-radius:  5px 0 0 5px !important;
+
+}
+.dot {
+    cursor: pointer;
+    margin: 0 5px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    font-size: 15px;
+    margin-bottom: 5% !important;
+  }
+  
+  .active {
+    color: #17D4FE;
+  }
+
+
+.loadingContainer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #131537;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.loader {
+    width: 100px;
+    height: 100px;
+    line-height: 150px;
+    margin: 100px auto;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 0;
+    text-transform: uppercase;
+  }
+  
+  .loader:before,
+  .loader:after {
+    opacity: 0;
+    box-sizing: border-box;
+    content: "\0020";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    border: 5px solid #17D4FE;
+    box-shadow: 0 0 35px #17D4FE, inset 0 0 35px  #17D4FE;
+  }
+  
+  .loader:after {
+    z-index: 1;
+    animation: gogoloader 2s infinite 1s;
+    -webkit-animation: gogoloader 2s infinite 1s;
+    -moz-animation: gogoloader 2s infinite 1s;
+    -ms-animation: gogoloader 2s infinite 1s;
+    -o-animation: gogoloader 2s infinite 1s;
+  }
+  
+  .loader:before {
+    z-index: 2;
+    animation: gogoloader 2s infinite;
+    -moz-animation: gogoloader 2s infinite;
+    -ms-animation: gogoloader 2s infinite;
+    -o-animation: gogoloader 2s infinite;
+    -webkit-animation: gogoloader 2s infinite;
+  }
+  @keyframes gogoloader{
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scale(1);
+        opacity: 0;
+      }
+  }
+  @-webkit-keyframes gogoloader {
+    0% {
+      -webkit-transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes gogoloader {
+    0% {
+      -webkit-transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      opacity: 0;
+    }
+ 
+}
+@-o-keyframes gogoloader {
+    0% {
+      -webkit-transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      opacity: 0;
+    }
+}
+@-ms-keyframes gogoloader {
+    0% {
+      -webkit-transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      opacity: 0;
+    }
+}
+
+.containerZkr{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.185);
+}
+.popupZkr{
+    width: 500px;
+    padding: 10px;
+    height: auto;
+    border-radius: 10px;
+    background: white;
+    animation: pop 1s;
+    -webkit-animation: pop 1s;
+    -moz-animation: pop 1s;
+    -o-animation: pop 1s;
+    -ms-animation: pop 1s;
+}
+.popupZkr h1{
+    color: black;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: 500;
+    text-align: right;
+}
+@keyframes pop{
+     from{
+         opacity: 0;
+     }
+     to{
+         opacity: 1;
+     }
+ }
+@-webkit-keyframes pop{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-moz-keyframes pop{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-o-keyframes pop{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-ms-keyframes pop{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media only screen and (max-width:350px){
+    .QuranHeader img{
+        width: 200px;
+        margin-top: 5%;
+    }
+    .ContainerBox{
+        width: 90%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .QuranContainer{
+        width: 95% !important; 
+    }
+    .btn-restart{
+        margin-right: -25%;
+        margin-top: -60%;
+    }
+}
+@media only screen and (max-width:480px){
+    .container-login{
+        width: 100%;
+        margin-top: 40%;
+    }
+    .popup{
+        width: 90%;
+    }
+    .box{
+        width: 100%;
+    }
+    .clock{
+        margin-top: 15%;
+    }
+    .QuranContainer{
+        width: 90%;
+        height: auto;
+    }
+    .QuranContainer h1{
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .quran img{
+        width: 100%;
+        height: auto;
+    }
+    .popupZkr{
+        width: 90% !important;
+    }
+
+}
+@media only screen and (min-width:481px) and (max-width:767px){
+    .QuranContainer{
+        width: 90%;
+        height: auto !important; 
+    }
+    .quran{
+        height: auto;
+    }
+    .QuranContainer h1{
+        font-size: 15px;
+    }
+
+}

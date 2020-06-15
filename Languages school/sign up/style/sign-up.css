@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Spartan', sans-serif;
+}
+.log-in-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log-in-box{
+    width: 70vh;
+    height: auto;
+    box-shadow: 0 0 50px #eeecec;
+    position: relative;
+    text-align: center;
+    background: white;
+    margin: 20px auto;
+}
+.log-in-title{
+    margin: 7vh auto 20px auto;
+    width: 90%;
+    display: inline-block;
+}
+.log-in-title h1{
+    line-height: 60px !important;
+}
+.group{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.group-form{
+    width: 80%;
+    height: 50px;
+    display: block !important;
+    margin: 10px auto;
+}
+.group-form input[type="text"] , input[type="email"] , input[type="password"] , input[type="submit"] , input[type="number"]{
+    width: 96%;
+    height: 100%;
+    padding: 0 10px;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    border: none;
+    background: #f9f9f9;
+    outline: none !important;
+}
+.button{
+    height: 5vh;
+}
+.button input[type="submit"]{
+    background:#f35588;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    outline: none !important;
+}
+.group-accounts{
+    width: 100%;
+    height: auto;
+    margin: 3% 0 10% 0!important;
+}
+.group-form-account{
+    width: 80%;
+    height: 55px;
+    display: block !important;
+    margin: 10px auto;
+}
+.group-form-account button{
+    width: 96%;
+    height: 100%;
+    padding: 0 10px;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    border: none;
+    background: #f9f9f9;
+    position: relative;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    outline: none;
+}
+.facebook{
+    background: #3b5998 !important;
+    color: white;
+    font-size: 17px !important;
+}
+.apple{
+    border: .1vh solid black !important;
+    border-radius: 5px;
+    font-size: 17px !important;
+    background: white !important;
+}
+.google{
+    background: white !important;
+    border-radius: 5px;
+    font-size: 17px !important;
+    font-weight: 600;
+    box-shadow: 0 0 10px  #eeecec;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.signup-page{
+    width: 0 auto !important;
+    height: auto;
+    line-height: 50px;
+}
+.signup-page a{
+    text-decoration: none;
+    color: black;
+}
+.group-form label{
+    display: inline-block !important;
+    width: 45%;
+    height: 100%;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.group-form input[type="checkbox"]{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:580px){
+    .log-in-box{
+        width: 95% !important;
+    }
+    .log-in-title{
+        margin: 7vh 0 20px 0;
+    }
+    .log-in-title h1{
+        font-size: 20px !important;
+        line-height: 50px;
+    }
+    .log-in-title p{
+        font-size: 15px !important;
+    }
+    .group-form{
+        width: 85%;
+        height: 50px !important;
+    }
+    .group-accounts{
+        text-align: center !important;
+    }
+    .group-form-account{
+        width: 90% !important;
+        display: block !important;
+        margin: 10px auto !important;
+        padding: 0 !important;
+    }
+    .group-form-account button{
+        width: 100% !important;
+        border-radius: 5px !important;
+    }
+    footer{
+        text-align: center !important;
+    }
+    footer p , a{
+        font-size: 15px !important;
+        padding: 5px !important;
+    }
+
+
+}
