@@ -249,4 +249,7 @@ transform: rotate(90deg);
     .slide h1{
         font-size: 20px;
     }
+    .slider{
+        background: url('https://images.unsplash.com/photo-1588750099599-09efbe4377ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');
+    }
 }
