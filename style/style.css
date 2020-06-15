@@ -172,7 +172,7 @@ transform: rotate(90deg);
     background-position: center;
     background-repeat: no-repeat;
     position: relative;    
-
+    margin-bottom: 10px;
 }
 .slide{
     background: #342ead48;
@@ -271,8 +271,6 @@ footer{
     align-items: center;
 }
 footer nav{
-    padding: 10px;
-    margin: 20px 10px;
     display: inline-block;
 }
 footer nav ul  svg{
@@ -285,16 +283,9 @@ footer nav ul svg path{
 footer nav ul li{
     list-style: none;
     margin: 10px 0;
+    padding: 5px 10px;
 }
-footer nav ul li:nth-child(2){
-    margin: 10px 15px;
-}
-footer nav ul li:nth-child(3){
-    margin: 10px 25px;
-}
-footer nav ul li:nth-child(4){
-    margin: 10px 15px;
-}
+
 footer nav ul li a{
     text-decoration: none;
     color: white;
@@ -343,13 +334,12 @@ footer nav ul li a{
 }
 .about{
     width: 98%;
-    height: 100%;
+    height: 100vh;
     margin: 10px auto;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
 }
 .about h1{
     padding: 10px 0; 
@@ -381,18 +371,20 @@ footer nav ul li a{
     display: block;
     margin: 0 auto;
 }
+
 .hire-me-container{
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px auto;
+    position: relative;
 }
 .hire-me-box{
     width: 90%;
     height: auto;
     padding: 10px;
-    margin-bottom: 5%;
 }
 .hire-me-box p{
     padding: 10px;
@@ -468,5 +460,32 @@ footer nav ul li a{
     }
     .slide h1{
         font-size: 20px;
+    }
+
+    .hire-me-container p{
+        text-align: left;
+    }
+    .about-box{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .hire-me-container{
+        height: 100%;
+        background: #f5f4fb;
+        position: relative;
+    }
+    footer{
+        height: auto;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    footer nav{
+        height: 50vh;
+        margin-top: 50px;
+    }
+    .footer p{
+        padding: 10px;
+        font-size: 15px;
     }
 }
