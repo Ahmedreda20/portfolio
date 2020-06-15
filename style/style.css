@@ -246,4 +246,7 @@ transform: rotate(90deg);
     .menu-box .mobile{
         display: block !important;
     }
+    .slide h1{
+        font-size: 20px;
+    }
 }
