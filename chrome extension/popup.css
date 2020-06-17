@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    font-family: 'AbeeZee';
+    scroll-behavior: smooth;
+    background: #1b1b2ff8;
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: #c8344d;
+    border-radius: 100px;
+}
+.container{
+    width: 325px;
+    height: 500px;
+    background: #1b1b2f;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px 10px;
+    margin: 10px 0;
+}
+.table{
+    height: 92%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 35px;
+}
+.files h1{
+    font-size: 15px;
+    line-height: 25px;
+    position: relative;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.files tr td div p{
+    width: 100%;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+.files tr td div{
+    max-width: 320px;
+    height: 50px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 1s ease;
+}
+table{
+    width: 100% !important;
+    position: relative;
+}
+table td{
+    position: relative;
+}
+.files table tr td{
+    color: white;
+    border-bottom: 1px solid #e43f5a;
+    height: 50px !important;
+}
+.content table td{
+    width: 100%;
+    display: block;
+}
+
+.group-form{
+    width: 100%;
+    height: 40px;
+    display: block;
+    margin: 5px auto !important;
+    position: relative;
+}
+.group-form input{
+    width: 96%;
+    height: 100%;
+    font-family: 'AbeeZee';
+    padding: 0 0 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+.content-box{
+    height: 150px;
+    position: relative;
+    margin-bottom: 10px !important;
+}
+.content-box textarea{
+    padding: 10px;
+    height: 100%;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'AbeeZee';
+    font-size: 15px;
+    width: 93%;
+    max-height: 90%;
+    outline: none;
+}
+.first-child{
+    color: white;
+    margin: 30px auto !important;
+    position: relative;
+    font-weight: lighter;
+    text-align: center;
+}
+.first-child h1{
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 50px;
+}
+.first-child p{
+    line-height: 22px;
+    font-size: 16px;
+
+}
+.group-form button{
+    width: 99%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: 'AbeeZee';
+    font-size: 15px;
+    background: #e43f5a;
+    outline: none;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    box-shadow: 1px 5px 30px -10px #c8344d;
+}
+
+.error p{
+    text-align: center;
+    color: #c8344d;
+    padding: 10px;
+}
+.btn-remove-all{
+    padding: 0 10px;
+    height: 40px;
+    font-family: 'AbeeZee';
+    font-size: 15px;
+    position: absolute;
+    border: none;
+    top: 0;
+    left: 50%;
+    margin-left: -15%;
+    margin-top: -3%;
+    background: #e43f5a;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    animation: delay 1s;
+    -webkit-animation: delay 1s;
+}
+
+.btn-remove-all::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 5px;
+    border-left-color: #c8344d;
+    border-bottom-color: #c8344d;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    margin-right: -10%;
+}
+.null{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.null p{
+    font-size: 15px;
+    font-family: 'AbeeZee';
+    color: #75686a;
+    line-height: 25px;
+    box-shadow: 1px 5px 15px -10px #75686a;
+}
+.last-child{
+    overflow: hidden;
+}
+.last-child p{
+    color: #e43f5a;
+    text-align: center;
+    padding: 10px;
+}
+.not{
+    width: 50px;
+    height: 60px;
+    border: none;
+    background: #e43f5a;
+    outline: none;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -3%;
+    margin-right: 3%;
+    animation: animate 1s;
+    -webkit-animation: animate 1s;
+    z-index: 1;
+}
+.not::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent #c8344d #c8344d transparent;
+    margin-left: -19%;
+}
+.not svg{
+    width: 30px;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    animation: serv 2s infinite linear;
+}
+.not svg path{
+    fill: #1b1b2f;
+}
+@keyframes serv{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes serv{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate{
+    from{
+        right: 100%;
+        opacity: 0;
+    }
+    to{
+        right: 0;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes animate{
+    from{
+
+        right: 100%;
+        opacity: 0;
+    }
+    to{
+        right:0;
+        opacity: 1;
+    }
+}
+@keyframes delay{
+    from{
+        margin-left: 3%;
+        left: 0;
+        opacity: 0;
+    }
+    to{
+        left: 50%;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes delay{
+    from{
+        margin-left: 3%;
+        left: 0;
+        opacity: 0;
+    }
+    to{
+        left: 50%;
+        opacity: 1;
+    }
+} 
+.btn-back{
+    width: 50px;
+    height: 20px;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;
+    cursor: pointer;
+    margin: 10px;
+    outline: none;
+}
+.btn-back svg{
+    vertical-align: middle;
+    width: 30px;
+}
+.btn-back svg path{
+    fill: #c8344d;
+}
+.files{
+    display: block;
+}
+.part{
+    height: auto !important;
+}
+.part p{
+    white-space: normal !important;
+    text-overflow: clip !important;
+    width: auto !important;
+    height: 100% !important;
+    position: relative !important;
+}
+.down{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    width: 15px;
+    height: 20px;
+    border: none;
+    transition: 1s ease;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+}
+.down svg{
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+}
+
+.orign  p{
+    white-space: nowrap;
+}
+.orign {
+    max-width: 320px;
+    height: 50px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 1s ease;
+}
+.files{
+    display: none;
+}
+@media only screen and (max-width:360px){
+    .container{
+        max-width: 90%;
+        position: relative;
+    }
+}
+
+.header {
+    position: fixed;;
+    text-align:center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+ 
+  .inner-header {
+    height:65vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+  .waves {
+    position:relative;
+    width: 100%;
+    height: 150px;
+  }
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+}
+use:nth-child(4){
+    fill: #c8344d;
+}
+use:nth-child(3){
+    fill: #c8344dc7;
+}
+use:nth-child(2){
+    fill: #c8344d8a;
+}
+use:nth-child(1){
+    fill: #c8344d2f;
+}

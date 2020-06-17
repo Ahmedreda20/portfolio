@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./popup.css">
+    <link rel="icon" href="./wallet.png" type="image/png/jpg">
+    <title>Wallet</title>
+</head>
+<body>
+    <div class="container files">
+        <button class="btn-remove-all">
+            Remove all
+        </button>
+        <button class="btn-back">
+            <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="long-arrow-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-long-arrow-left fa-w-14 fa-7x"><path fill="currentColor" d="M136.97 380.485l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L60.113 273H436c6.627 0 12-5.373 12-12v-10c0-6.627-5.373-12-12-12H60.113l83.928-83.444c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0l-116.485 116c-4.686 4.686-4.686 12.284 0 16.971l116.485 116c4.686 4.686 12.284 4.686 16.97-.001z" class=""></path></svg>
+        </button>
+
+        <div class="table">
+            <table>
+            </table>
+        </div>
+    </div>
+
+    <div class="container content">
+        <button class="not">
+<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cog fa-w-16 fa-7x"><path fill="currentColor" d="M482.696 299.276l-32.61-18.827a195.168 195.168 0 0 0 0-48.899l32.61-18.827c9.576-5.528 14.195-16.902 11.046-27.501-11.214-37.749-31.175-71.728-57.535-99.595-7.634-8.07-19.817-9.836-29.437-4.282l-32.562 18.798a194.125 194.125 0 0 0-42.339-24.48V38.049c0-11.13-7.652-20.804-18.484-23.367-37.644-8.909-77.118-8.91-114.77 0-10.831 2.563-18.484 12.236-18.484 23.367v37.614a194.101 194.101 0 0 0-42.339 24.48L105.23 81.345c-9.621-5.554-21.804-3.788-29.437 4.282-26.36 27.867-46.321 61.847-57.535 99.595-3.149 10.599 1.47 21.972 11.046 27.501l32.61 18.827a195.168 195.168 0 0 0 0 48.899l-32.61 18.827c-9.576 5.528-14.195 16.902-11.046 27.501 11.214 37.748 31.175 71.728 57.535 99.595 7.634 8.07 19.817 9.836 29.437 4.283l32.562-18.798a194.08 194.08 0 0 0 42.339 24.479v37.614c0 11.13 7.652 20.804 18.484 23.367 37.645 8.909 77.118 8.91 114.77 0 10.831-2.563 18.484-12.236 18.484-23.367v-37.614a194.138 194.138 0 0 0 42.339-24.479l32.562 18.798c9.62 5.554 21.803 3.788 29.437-4.283 26.36-27.867 46.321-61.847 57.535-99.595 3.149-10.599-1.47-21.972-11.046-27.501zm-65.479 100.461l-46.309-26.74c-26.988 23.071-36.559 28.876-71.039 41.059v53.479a217.145 217.145 0 0 1-87.738 0v-53.479c-33.621-11.879-43.355-17.395-71.039-41.059l-46.309 26.74c-19.71-22.09-34.689-47.989-43.929-75.958l46.329-26.74c-6.535-35.417-6.538-46.644 0-82.079l-46.329-26.74c9.24-27.969 24.22-53.869 43.929-75.969l46.309 26.76c27.377-23.434 37.063-29.065 71.039-41.069V44.464a216.79 216.79 0 0 1 87.738 0v53.479c33.978 12.005 43.665 17.637 71.039 41.069l46.309-26.76c19.709 22.099 34.689 47.999 43.929 75.969l-46.329 26.74c6.536 35.426 6.538 46.644 0 82.079l46.329 26.74c-9.24 27.968-24.219 53.868-43.929 75.957zM256 160c-52.935 0-96 43.065-96 96s43.065 96 96 96 96-43.065 96-96-43.065-96-96-96zm0 160c-35.29 0-64-28.71-64-64s28.71-64 64-64 64 28.71 64 64-28.71 64-64 64z" class=""></path></svg>        
+</button>
+        <table>
+            <tr>
+                <td class="first-child">
+                    <h1>Welcome dude!</h1>
+                    <p>Set name of this content you want to save then type you content and click on save button and enjoy with safe wallet.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="group-form">
+                        <input type="text" name="fileName" id="fileName" placeholder="File name..." maxlength="20">
+                    </div>
+                    </td>
+                    <td>
+                    <div class="group-form content-box">
+                        <textarea name="content" id="content" placeholder="Content..."></textarea>
+                    </div>
+                </td>
+                <td>
+                    <div class="group-form button">
+                        <button class="btn-save">SAVE</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="header">
+        <!--Waves Container-->
+        <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0"/>
+        <use xlink:href="#gentle-wave" x="48" y="3" />
+        <use xlink:href="#gentle-wave" x="48" y="5" />
+        <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+        </svg>
+        </div>
+        
+        </div>
+    <script src="./popup.js"></script>
+    <script src="../extension/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+
+
+ <script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCVJy14NLkR55CQx94oZLOzny8W4T25hYk",
+    authDomain: "wallet-extension.firebaseapp.com",
+    databaseURL: "https://wallet-extension.firebaseio.com",
+    projectId: "wallet-extension",
+    storageBucket: "wallet-extension.appspot.com",
+    messagingSenderId: "45020600167",
+    appId: "1:45020600167:web:06e6ab8091bf06f1f741c2",
+    measurementId: "G-2QPEZ5CBGZ"
+  };
+  firebase.initializeApp(firebaseConfig);
+
+    
+  database = firebase.database();
+
+var ref = database.ref('user');
+ref.on('value' , gotData, errData);
+
+function gotData(data){
+const parent_childrens = document.querySelectorAll('.parent');
+for (var i =0; i < parent_childrens.length; i++){
+    parent_childrens[i].remove();
+}
+
+var scores = data.val();
+var keys = Object.keys(scores);
+for ( var i = 0; i < keys.length; i++){
+    var k = keys[i];
+    var initials = scores[k].content;
+    var score = scores[k].name;
+     $('.files table').append("<tr class='parent'><td><div><h1>" + score + "</h1><p>" + initials +"</p><span class='down'><svg aria-hidden='true' focusable='false' data-prefix='far' data-icon='angle-down' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' class='svg-inline--fa fa-angle-down fa-w-10 fa-7x'><path fill='white' d='M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z'></path></svg></span></div></td></tr>");
+}
+if(keys === undefined || keys === null){
+    console.log("oops! there is not any data you addded")
+}
+}
+function errData(err){
+console.log('oops!, there is error please try again.');
+console.log(err);
+}
+const removeData = document.querySelector('.btn-remove-all');
+removeData.addEventListener('click' , function(){
+firebase.database().ref('user/').set(null)
+document.querySelector('.null').style.display = "block";
+location.reload();
+});
+
+
+ $(document).on('click', '.down', function() {      
+if($(this).parent().toggleClass("")){
+    $(this).parent().toggleClass("part")
+}else{
+    $(this).parent().removeClass("part")
+}
+});
+
+</script> 
+</body>
+</html>

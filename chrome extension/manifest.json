@@ -1,0 +1,27 @@
+{
+    "name": "Wallet",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Save the texts you want here to make it easier for you to save many of your texts and restore them again whenever you want them!",
+    "permissions": [
+      "tabs"
+    ],
+    "browser_action": {
+      "default_icon": "./wallet.png",
+      "default_popup": "popup.html"
+     },
+     "content_scripts":  [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["popup.js"  , "jquery-3.5.1.min.js"],
+        "ccs": ["popup.css"]
+      }
+    ],
+    "icons": {
+      "128": "./wallet.png",
+      "96": "./wallet.png",
+      "144": "./wallet.png",
+      "192": "./wallet.png"
+    },
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
+}
